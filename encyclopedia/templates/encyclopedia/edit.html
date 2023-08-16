@@ -1,0 +1,21 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Editing {{title}}
+{% endblock %}
+
+{% block body %}
+
+<form action="save_edit/" method="POST">{% csrf_token %}
+    <label for="titleText_area" class="form-label2"><h4>Put in the modified content:</h4></label><br>
+    <textarea class="form-control1" name = "text_edit" id="titleText" rows="2" style="height:272px">{{content}}</textarea><br>
+    <input type="submit" value="Save" style="background-color: black; color: aliceblue;">
+</form>
+
+    
+    
+
+
+
+
+{% endblock %}

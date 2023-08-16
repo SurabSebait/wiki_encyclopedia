@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    List of solutions
+{% endblock %}
+
+{% block body %}
+
+    <h4>Your search was not present in our entry</h4>
+    <h4>These are the entries we could find closest to your search</h4>
+    {% for i in list %}
+        <ul>
+            <li><a href="{{i}}/" style="color: black; "><h5>{{i}}</h5></a><br></li>
+        </ul>
+    {% endfor %}
+
+
+
+
+{% endblock %}

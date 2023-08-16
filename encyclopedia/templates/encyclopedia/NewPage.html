@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+   New Page
+{% endblock %}
+
+{% block body %}
+
+    <form action="save/" method="POST">{% csrf_token %}
+        <label for="titleText_area" class="form-label1"><h4>Enter the title:</h4></label><br>
+        <textarea class="form-control1" name = "title" id="titleText" rows="2" style="height:72px"></textarea><br>
+        <label for="titleText_area" class="form-label2"><h4>Enter the content:</h4></label><br>
+        <textarea class="form-control1" name = "text" id="titleText" rows="2" style="height:272px"></textarea><br>
+        <input type="submit" value="Save" style="background-color: black; color: aliceblue;">
+    </form>
+
+
+
+
+{% endblock %}

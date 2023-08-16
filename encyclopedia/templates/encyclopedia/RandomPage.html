@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block body %}
+
+    
+    
+    <h5><pre>{{content |safe}}</pre></h5>
+    
+    <a href="edit/"><button style="background-color: black; color:aliceblue;">Edit the page</button></a>
+
+
+
+{% endblock %}
